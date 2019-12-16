@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Game Prize Demo</title>
+		<link rel="stylesheet" href="bootstrap.css"></link>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/ui-lightness/jquery-ui.css">
+		<link rel="stylesheet" href="bootstrap-responsive.css"></link>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/ui-lightness/jquery-ui.css">
+		<link rel="stylesheet" href="demo.css"></link>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header" style="">
+				<h1>
+					Game Prize
+				</h1>
+			</div>
+
+			<div class="row">
+				<div class="span8">
+					<div class="roulette_container" >
+						<div class="roulette" style="display:none;">
+							<img class="prize_img" src="1.png"/>
+							<img class="prize_img" src="2.png"/>
+							<img class="prize_img" src="3.png"/>
+							<img class="prize_img" src="4.png"/>
+							<img class="prize_img" src="5.png"/>
+							<img class="prize_img" src="6.png"/>
+						</div>
+					</div>
+				</div>
+				<div class="span4">
+					<div class="btn_container">
+						<p>
+						<button class="btn btn-large btn-primary start"> START </button>
+						<button class="stop btn-large btn btn-warning"> STOP </button>
+						</p>
+						<span class="stop_image_number_param" style="display: none;"></span>
+					</div>
+					<!-- <div class="log_container">
+						<p class="demo_label">Log</p>
+						<div id="msg">
+						</div>
+					</div> -->
+					<div class="image_sample"> 
+						<!-- <span class="image_sample"> -->
+							<img data-value="0"  src="1.png"/>
+							<img data-value="1"  src="2.png"/>
+							<img data-value="2"  src="3.png"/>
+							<img data-value="3"  src="4.png"/>
+							<img data-value="4"  src="5.png"/>
+							<img data-value="5"  src="6.png"/>
+						<!-- </span> -->
+						<div><br><br></div>
+						
+						<div class="prize_name" disabled> </div>
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+		<script src="../roulette.js"></script>
+		<script src="demo.js"></script>
+
+	</body>
+</html>
+
