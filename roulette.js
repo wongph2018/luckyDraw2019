@@ -2,7 +2,7 @@
 	var Roulette = function(options) {
 		var defaultSettings = {
 			maxPlayCount : null, // x >= 0 or null
-			speed : 10, // x > 0
+			speed : 1, // x > 0
 			stopImageNumber : null, // x >= 0 or null or -1
 			rollCount : 3, // x >= 0
 			duration : 3, //(x second)
@@ -145,7 +145,7 @@
 			roll();
 			p.slowDownTimer = setTimeout(function(){
 				slowDownSetup();
-			}, p.duration * 1000);
+			}, p.duration * 100);
 		}
 
 		var stop = function(option) {

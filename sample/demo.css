@@ -15,8 +15,8 @@ div.roulette {
 
 div.roulette_container {
 	background-color:rgb(253, 252, 253);
-	width:200px;
-	height:200px;
+	width:700px;
+	height:600px; 
 	border:1px solid rgba(253, 252, 253, 0.31);
 	box-shadow:0px 0px 3px lightpink;margin:auto;
 }
@@ -69,4 +69,15 @@ div.param_label {
 }
 div.ui-slider {
 	width: 300px;
+}
+.prize_img{
+	width: 500px;
+	height: 500px;
+}
+.prize_name{
+	font-size: large;
+	text-align: center;
+}
+.opClass {
+    opacity:0.4;
 }
