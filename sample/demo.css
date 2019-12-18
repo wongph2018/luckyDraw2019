@@ -81,3 +81,9 @@ div.ui-slider {
 .opClass {
     opacity:0.4;
 }
+.strokeme {
+	font-family: "ANIME ACE";
+	font-size: 50px;
+	color: white;
+	text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  }
