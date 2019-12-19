@@ -1,6 +1,22 @@
 $(function () {
 
-	var prizeNameArray = ["prize 1", "prize 2", "prize 3", "prize 4", "prize 5", "prize 6"];
+	var prizeNameArray = [
+		"Birdie Travel SIM (5 days Asia package)", 
+		"Birdie Travel SIM (4 days Asia package)", 
+		"Mcdonald $20 coupon", 
+		"Birdie Doll", 
+		"SmarTone 5G tote bag", 
+		"Higher Living English Breakfast Organic Tea"
+	];
+
+	var prizeNameArrayZh = [
+		"自由鳥遨遊SIM  (5日亞洲12地)", 
+		"自由鳥遨遊SIM  (4日亞洲12地)", 
+		"麥當勞 $20 現金券", 
+		"自由鳥公仔", 
+		"SmarTone 5G 手提袋", 
+		"Higher Living 天然有機茶包"
+	];
 
 	
 	let prizeMap = new Map();
@@ -41,6 +57,7 @@ $(function () {
 			$('.start').removeAttr('disabled');
 			$('.stop').attr('disabled', 'true');
 			$('.prize_name').show();
+			$('.prize_name_zh').show();
 
 			// $('.image_sample').children().filter('[data-value="' + Number($('.stop_image_number_param').text()) + '"]').css('opacity' , 1);
 		}
@@ -117,7 +134,9 @@ $(function () {
 		// $('.image_sample').children().filter('[data-value="' + stopImageNumber + '"]').css('opacity' , 1);
 		$('.stop_image_number_param').text(stopImageNumber);
 		$('.prize_name').hide();
+		$('.prize_name_zh').hide();
 		$('.prize_name').text(prizeNameArray[stopImageNumber]);
+		$('.prize_name_zh').text(prizeNameArrayZh[stopImageNumber]);
 		// $('.prize_name').text("prize1");
 		updateParamater();
 	}
